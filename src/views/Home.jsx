@@ -26,7 +26,7 @@ const Home = () => {
     handleCoinModified,
     handleCoinRemoved,
   } = useCoin();
-  const [currency, setCurrency] = React.useState(currencies[1]);
+  const [currency, setCurrency] = React.useState(currencies[0]);
 
   const handleSelectCurrency = (e) => {
     if (currencies.includes(e.target.value)) {

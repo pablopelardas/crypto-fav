@@ -1,4 +1,6 @@
 # crypto-fav
+You can access the site at the following link: :rocket: [CryptoFav!](https://crypto-fav.vercel.app/)
+
 #### Main (DESKTOP)
 ![image](https://user-images.githubusercontent.com/31576799/184506861-2d991046-6591-4a1c-b868-07311658a857.png)
 #### Main (MOBILE)
@@ -20,6 +22,7 @@ React, Redux Toolkit, Tailwind
 - Change currency (USD, EUR, GBP...)
 - Remove crypto
 - Change crypto ammount
+- Keep data on reload with Local Storage
 
 ## Run Locally
 

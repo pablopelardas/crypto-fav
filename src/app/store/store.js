@@ -8,8 +8,6 @@ export const store = configureStore({
   reducer: {
     [cryptApiSlice.reducerPath]: cryptApiSlice.reducer,
     coin: coinReducer,
-    // post: postReducer,
-    // ui: uiReducer
   },
   middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(cryptApiSlice.middleware),
   devTools: true

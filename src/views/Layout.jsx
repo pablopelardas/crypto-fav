@@ -6,7 +6,6 @@ const Layout = ({children}) => {
     <main className='min-h-screen bg-amber-100'>
       <Navbar />
       {children}
-      {/* TODO: footer */}
     </main>
   )
 }

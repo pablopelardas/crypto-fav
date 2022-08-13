@@ -1,6 +1,9 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import { selectUserCoins } from "../app/slices/coinSlice";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGear } from "@fortawesome/free-solid-svg-icons";
+import { faTrash } from "@fortawesome/free-solid-svg-icons";
 
 const CoinBar = ({
   coin,
@@ -39,12 +42,16 @@ const CoinBar = ({
       <p className="font-semibold">{userC.amount}</p>
       <button
         onClick={(e) => handleClick(coin.ticker)}
-        className="bg-red-500 w-5 h-5 rounded-full hover:scale-105 hover:shadow-sm hover:shadow-black absolute right-1 top-1 z-10"
-      ></button>
+        className="absolute right-1 top-1"
+      >
+        <FontAwesomeIcon className="hover:scale-110" icon={faTrash} />
+      </button>
       <button
         onClick={(e) => handleUpdate(userC)}
-        className="bg-amber-400 w-5 h-5 rounded-full hover:scale-105 hover:shadow-sm hover:shadow-black absolute right-8 top-1 z-10"
-      ></button>
+        className="absolute right-8 top-1 "
+      >
+        <FontAwesomeIcon className="hover:scale-110" icon={faGear} />
+      </button>
     </div>
   );
 
